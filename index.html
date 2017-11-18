@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Redirecting to my website...</title>
-<meta http-equiv="refresh" content="3; URL='https://logics4.gitlab.io/'" />
+<meta http-equiv="refresh" content="5; URL='https://logics4.gitlab.io/'" />
 </head>
 <style>
 body {
@@ -20,8 +20,32 @@ a {
 	text-align: center;
 	color: #2c6a9e;
 }
+a2 {
+	font-family: Century Gothic;
+	font-size: 7px;
+	text-align: center;
+	color: white;
+}
 </style>
+
 <body>
-<h1>Redirecting to <a href="https://logics4.gitlab.io/">my website</a> in 3 seconds...</h1>
+<noscript>
+<h1>Redirecting to <a href="https://logics4.gitlab.io/">my website</a> in 5 seconds...</h1>
+<a2>(Maybe you could turn on JavaScript in your browser... Just saying.)</a2>
+</noscript>
+<h1>Redirecting to <a href=" https://logics4.gitlab.io/ ">my website</a> in <span id="countdown">5</span> seconds...</h1>
+<script type="text/javascript">
+function countdownText() {
+var num = document.getElementById("countdown");
+setTimeout(function(){ num.innerHTML="4" }, 1000);
+setTimeout(function(){ num.innerHTML="3" }, 2000);
+setTimeout(function(){ num.innerHTML="2" }, 3000);
+setTimeout(function(){ num.innerHTML="1" }, 4000);
+setTimeout(function(){ num.innerHTML="0" }, 5000);
+}
+window.onload = function() {
+countdownText();
+}
+</script>
 </body>
 </html>
