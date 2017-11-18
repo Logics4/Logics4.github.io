@@ -33,7 +33,7 @@ a2 {
 <h1>Redirecting to <a href="https://logics4.gitlab.io/">my website</a> in 5 seconds...</h1>
 <a2>(Maybe you could turn on JavaScript in your browser... Just saying.)</a2>
 </noscript>
-<h1>Redirecting to <a href=" https://logics4.gitlab.io/ ">my website</a> in <span id="countdown">5</span> seconds...</h1>
+<h1>Redirecting to <a href=" https://logics4.gitlab.io/ ">my website</a> in <span id="countdown">5</span> second<span id="s">s</span>...</h1>
 <script type="text/javascript">
 function countdownText() {
 var num = document.getElementById("countdown");
@@ -43,8 +43,13 @@ setTimeout(function(){ num.innerHTML="2" }, 3000);
 setTimeout(function(){ num.innerHTML="1" }, 4000);
 setTimeout(function(){ num.innerHTML="0" }, 5000);
 }
+function pluralOrSingular() {
+var num2 = document.getElementById("s");
+setTimeout(function(){ num2.innerHTML="s" }, 4000);
+}
 window.onload = function() {
 countdownText();
+pluralOrSingular();
 }
 </script>
 </body>
