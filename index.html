@@ -29,16 +29,16 @@ a {
 </style>
 
 <body>
-<h1>Redirecting to <a href=" https://logics4.gitlab.io/ ">my website</a> in <span id="countdown">5</span> seconds...</h1>
+<h1>Redirecting to <a href=" https://logics4.gitlab.io/ ">my website</a> <span id="countdown">in 5 seconds</span>...</h1>
 <noscript><p class="noscripttext">(You could maybe enable JavaScript in your browser... Just saying.)</p></noscript>
 <script type="text/javascript">
 function countdownText() {
 var num = document.getElementById("countdown");
-setTimeout(function(){ num.innerHTML="4" }, 1000);
-setTimeout(function(){ num.innerHTML="3" }, 2000);
-setTimeout(function(){ num.innerHTML="2" }, 3000);
-setTimeout(function(){ num.innerHTML="1" }, 4000);
-setTimeout(function(){ num.innerHTML="0" }, 5000);
+setTimeout(function(){ num.innerHTML="in 4 seconds" }, 1000);
+setTimeout(function(){ num.innerHTML="in 3 seconds" }, 2000);
+setTimeout(function(){ num.innerHTML="in 2 seconds" }, 3000);
+setTimeout(function(){ num.innerHTML="in 1 second" }, 4000);
+setTimeout(function(){ num.innerHTML="now" }, 5000);
 }
 window.onload = function() {
 countdownText();
