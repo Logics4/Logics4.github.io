@@ -20,7 +20,7 @@ a {
 	text-align: center;
 	color: #2c6a9e;
 }
-noscripttext {
+.noscripttext {
 	font-family: Century Gothic;
 	font-size: 15px;
 	text-align: center;
@@ -30,9 +30,7 @@ noscripttext {
 
 <body>
 <h1>Redirecting to <a href=" https://logics4.gitlab.io/ ">my website</a> in <span id="countdown">5</span> seconds...</h1>
-<noscript>
-<noscripttext>(You could maybe enable JavaScript in your browser... Just saying.)</noscripttext>
-</noscript>
+<noscript><p class="noscripttext">(You could maybe enable JavaScript in your browser... Just saying.)</p></noscript>
 <script type="text/javascript">
 function countdownText() {
 var num = document.getElementById("countdown");
