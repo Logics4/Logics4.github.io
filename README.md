@@ -1,3 +1,3 @@
 # Hi!
 
-This website redirects to [https://logics4.gitlab.io/](https://logics4.gitlab.io/).
+This is my website's code. This is the link for it: [https://logics4.github.io](https://logics4.github.io)
